@@ -3,7 +3,7 @@ package BinaryLinearSearch;
 /**
  * Author: Brian Konzman
  * Date: 1/14/2016
- * INF 260-002
+ * INF 364
  */
 public class LinearSearch implements SearchableSet {
 

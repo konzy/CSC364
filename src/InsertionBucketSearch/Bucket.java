@@ -5,13 +5,13 @@ import java.util.*;
 /**
  * Author: Brian Konzman
  * Date: 2/2/2016
- * INF 260-002
+ * INF 364
  */
 public class Bucket {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int[] tenArray = createRandomSet(10, 1000);
+        //int[] tenArray = createRandomSet(10, 1000);
         int[] hundredArray = createRandomSet(100, 1000);
         int[] thousandArray = createRandomSet(1000, 1000);
         int[] tenThousandArray = createRandomSet(10000, 1000);
