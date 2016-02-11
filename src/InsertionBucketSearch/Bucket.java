@@ -42,24 +42,29 @@ public class Bucket {
         System.out.println("hundred 10 buckets " + String.valueOf(total));
 
         start = System.nanoTime();
-        bucketSort(hundredArray, 100);
+        bucketSort(thousandArray, 10);
         total = System.nanoTime() - start;
-        System.out.println("hundred 100 buckets " + String.valueOf(total));
+        System.out.println("thousand 10 buckets " + String.valueOf(total));
 
         start = System.nanoTime();
-        bucketSort(hundredArray, 1000);
+        bucketSort(thousandArray, 100);
         total = System.nanoTime() - start;
-        System.out.println("hundred 1000 buckets " + String.valueOf(total));
+        System.out.println("thousand 100 buckets " + String.valueOf(total));
 
-//        start = System.nanoTime();
-//        bucketSort(thousandArray, 100);
-//        total = System.nanoTime() - start;
-//        System.out.println("thousand bucket " + String.valueOf(total));
-//
-//        start = System.nanoTime();
-//        bucketSort(tenThousandArray);
-//        total = System.nanoTime() - start;
-//        System.out.println("ten thousand insertion " + String.valueOf(total));
+        start = System.nanoTime();
+        bucketSort(tenThousandArray, 10);
+        total = System.nanoTime() - start;
+        System.out.println("ten thousand 10 buckets " + String.valueOf(total));
+
+        start = System.nanoTime();
+        bucketSort(tenThousandArray, 100);
+        total = System.nanoTime() - start;
+        System.out.println("ten thousand 100 buckets " + String.valueOf(total));
+
+        start = System.nanoTime();
+        bucketSort(tenThousandArray, 1000);
+        total = System.nanoTime() - start;
+        System.out.println("ten thousand 1000 buckets " + String.valueOf(total));
     }
 
     public static int[] createRandomSet(int n, int range){
